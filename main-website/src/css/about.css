@@ -1,0 +1,14 @@
+.aboutBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    margin: 50px 70px;
+    width: 50%;
+    color: rgba(0, 140, 255, 0.966);
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    height: 300px;
+    border-radius: 5px;
+}

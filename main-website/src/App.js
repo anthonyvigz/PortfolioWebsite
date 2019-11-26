@@ -24,8 +24,8 @@ function App() {
         <nav className="navbar">
           <h1>ANTHONY VIGLIOTTA</h1>
           <div className="links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <NavLink activeClassName="selected" exact to="/">Home</NavLink>
+            <NavLink activeClassName="selected" to="/about">About</NavLink>
             <a href="#" >Skills</a>
             <a href="#" >Work</a>
             <a href="#" >Resume</a>

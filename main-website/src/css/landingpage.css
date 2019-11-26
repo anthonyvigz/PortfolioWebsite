@@ -23,7 +23,14 @@
     color: white;
     text-decoration: none;
     font-size: 1.0em;
+    transition: 0.5s;
 }
+
+.links .selected {
+    color: rgba(142, 223, 255, 0.849);
+    transition: 0.5s;
+}
+
 
 .homeBlock {
     display: flex;

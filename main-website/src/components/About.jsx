@@ -1,5 +1,6 @@
 import React from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
+import '../css/about.css';
 
 function About() {
 
