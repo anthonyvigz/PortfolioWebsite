@@ -8,7 +8,7 @@ font-family: 'Raleway', sans-serif;
 
 .App {
   text-align: center;
-  background-color: rgba(0, 140, 255, 0.966);
+  background:linear-gradient(0deg,rgba(0, 195, 255, 0.733),rgba(0, 140, 255, 0.76)),url('./img/testbackground4.jpg');
 	background-size: cover;
 	background-position: center center;
   position: relative;

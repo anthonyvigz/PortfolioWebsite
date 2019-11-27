@@ -10,12 +10,10 @@ function Home() {
   return (
     <AbsoluteWrapper>
         <div className="homeBlock">
-            <h3>Hello!</h3>
-            <animated.div style={props}>
-                I am Anthony!
-            </animated.div>
+            <button>Hello!</button>
+            <h2>I am Anthony.</h2>
             <p>
-                I'm a Full Stack Web Developer highly skilled in an array of 
+                I am a Full Stack Web Developer highly skilled in an array of 
                 front-end and back-end languages and frameworks. 
                 I have a passion for crisp design and flawless functionality.
             </p>

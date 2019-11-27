@@ -43,3 +43,27 @@
     color: white;
     font-family: 'Raleway', sans-serif;
 }
+
+.homeBlock button {
+    padding: 8px;
+    font-size: 1.9em;
+    font-weight: bold;
+    background-color: white;
+    color: rgba(0, 140, 255, 0.76);
+    letter-spacing: 2px;
+    border-radius: 4px;
+    border: none;
+    width: 120px;
+}
+
+.homeBlock h2 {
+    font-size: 2.7em;
+    font-weight: bold;
+}
+
+.homeBlock p {
+    margin-top: -10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 28px;
+}
