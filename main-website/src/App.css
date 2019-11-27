@@ -6,14 +6,6 @@ font-family: 'Quantico', sans-serif;
 font-family: 'Raleway', sans-serif;
 */ 
 
-.App {
-  text-align: center;
-  background:linear-gradient(0deg,rgba(0, 195, 255, 0.63),rgba(0, 140, 255, 0.658)),url('./img/testbackground5.jpg');
-	background-size: cover;
-	background-position: center center;
-  position: relative;
-  height: 100vh;
-}
 
 .App-logo {
   height: 40vmin;

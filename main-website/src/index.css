@@ -1,14 +1,86 @@
-body {
+.mainbody {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    background:linear-gradient(0deg,rgba(0, 195, 255, 0.63),rgba(0, 140, 255, 0.658)),url('./img/testbackground5.jpg');
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; 
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  transition: opacity 1s;
 }
+
+.altbody {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    background: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; 
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  transition: opacity 1s;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  transition: 1s;
+
+}
+
+.navbarAlt {
+  color: rgba(0, 140, 255, 0.76);
+  transition: 1s;
+}
+
+.navbar h1 {
+  letter-spacing: 3px;
+  font-size: 1.5em;
+}
+
+.links {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+.links .selected {
+  color: rgba(142, 223, 255, 0.849);
+  transition: 0.5s;
+}
+
+.as {
+  color: white;
+  text-decoration: none;
+  font-size: 1.0em;
+  transition: 0.5s;
+}
+
+.linksAlt {
+  color: rgba(0, 140, 255, 0.76);
+  text-decoration: none;
+}
+
+
+

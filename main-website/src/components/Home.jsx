@@ -4,7 +4,8 @@ import AbsoluteWrapper from './AbsoluteWrapper';
 
 function Home() {
 
-      
+    document.body.classList.remove("newpage");
+
     const props = useSpring({opacity: 1, from: {opacity: 0}, })
 
   return (

@@ -5,12 +5,20 @@ import { Link, NavLink } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import AbsoluteWrapper from './components/AbsoluteWrapper';
+import NavBar from './components/NavBar';
 import './App.css';
 import './css/landingpage.css';
 
 function App() {
 
   let location = useLocation();
+
+
+  if(location.pathname !== "/") {
+    document.body.className = "altbody";
+  } else {
+    document.body.className = "mainbody";
+  }
 
   let transitions = useTransition(location, location => location.pathname, {
     from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
@@ -20,18 +28,8 @@ function App() {
 
   return (
     <AbsoluteWrapper>
+      <NavBar />
       <div className="App">
-        <nav className="navbar">
-          <h1>ANTHONY VIGLIOTTA</h1>
-          <div className="links">
-            <NavLink activeClassName="selected" exact to="/">Home</NavLink>
-            <NavLink activeClassName="selected" to="/about">About</NavLink>
-            <a href="#" >Skills</a>
-            <a href="#" >Work</a>
-            <a href="#" >Resume</a>
-            <a href="#" >Contact</a>
-          </div>
-        </nav>
         <div>
           {transitions.map(({ item: location, props, key }) => (
           <animated.div key={key} style={props}>
