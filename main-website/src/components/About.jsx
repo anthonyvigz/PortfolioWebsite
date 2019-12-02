@@ -1,7 +1,7 @@
 import React from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/about.css';
-import dummyPortrait from '../img/irakli-nadar-artstation-da.jpg';
+import dummyPortrait from '../img/portrait5.png';
 
 function About() {
 

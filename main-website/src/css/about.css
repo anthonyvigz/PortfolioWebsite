@@ -16,6 +16,28 @@
 .aboutInfo {
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
     text-align: left;
+    padding: 10px;
+}
+
+.aboutInfo h2 {
+    margin-bottom: -5px;
+    font-size: 1.2em;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.aboutInfo h1 {
+    margin-bottom: -2px;
+}
+
+.aboutInfo p {
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.aboutBlock img {
+    width: 350px;
 }

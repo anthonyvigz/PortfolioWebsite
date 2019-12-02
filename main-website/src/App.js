@@ -4,6 +4,7 @@ import { useTransition, animated } from 'react-spring';
 import { Link, NavLink } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
+import Skills from './components/Skills';
 import AbsoluteWrapper from './components/AbsoluteWrapper';
 import NavBar from './components/NavBar';
 import './App.css';
@@ -36,6 +37,7 @@ function App() {
             <Switch location={location}>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/skills" component={Skills} />
             </Switch>
           </animated.div>
           ))} 
