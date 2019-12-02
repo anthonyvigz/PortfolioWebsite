@@ -20,6 +20,7 @@ function Skills() {
   return (
     <AbsoluteWrapper>
         <div className="skillsPage">
+            <h1 className="tech">Technical Skills</h1>
             <div className="skillsBlock">
                 {/* HTML */}
                 <button onMouseEnter={changeSkill} name="HTML5">
@@ -147,9 +148,12 @@ function Skills() {
                     delay='1300'>
                     {props => <div style={props}>
                     <div className="mBlock">
-                        <h3>Web Development</h3>
                         <i className="fa fa-laptop"></i>
-                        <p>random text</p>
+                        <h3>Web Development</h3>
+                        <p>
+                            Can create and modify web content from the ground up
+                            using various front-end frameworks and database interfaces.
+                        </p>
                     </div>
                     </div>}
                 </Spring>
@@ -159,9 +163,12 @@ function Skills() {
                     delay='1400'>
                     {props => <div style={props}>
                         <div className="mBlock">
-                            <h3>UI/UX Enhancement</h3>
                             <i className="fas fa-cog"></i>
-                            <p>random text</p>
+                            <h3>UI/UX Enhancement</h3>
+                            <p>With a strong history in graphic design;
+                                Anthony has a knack for producing eye-popping
+                                and user friendly interfaces.
+                            </p>
                         </div>
                     </div>}
                 </Spring>
@@ -171,9 +178,12 @@ function Skills() {
                     delay='1500'>
                     {props => <div name="resp" style={props}>
                         <div className="mBlock">
-                            <h3>Responsive Design</h3>
                             <i className="far fa-window-restore"></i>
-                            <p>random text</p>
+                            <h3>Responsive Design</h3>
+                            <p>Proficiency in transforming new or existing
+                                pages to become fully responsive and adaptive 
+                                across all media platforms.
+                            </p>
                         </div>
                     </div>}
                 </Spring>
@@ -183,9 +193,13 @@ function Skills() {
                     delay='1600'>
                     {props => <div name="leader" style={props}>
                         <div className="mBlock">
-                            <h3>Team Leadership</h3>
                             <i className="fas fa-chalkboard-teacher"></i>
-                            <p>random text</p>
+                            <h3>Team Leadership</h3>
+                            <p>Anthony takes pride in his ability
+                                to lead a team to success
+                                by being attentive to colleagues and
+                                resourceful in finding solutions.
+                            </p>
                         </div>
                     </div>}
                 </Spring>
@@ -195,9 +209,11 @@ function Skills() {
                     delay='1700'>
                     {props => <div name="vid" style={props}>
                         <div className="mBlock">
-                            <h3>Graphic and Video Production</h3>
                             <i className="fas fa-video"></i>
-                            <p>random text</p>
+                            <h3>Graphic and Video Production</h3>
+                            <p>Having mastered the Adobe Creative Suite; Anthony makes an outstanding candidate
+                                with a unique skillset in photo and video production.
+                            </p>
                         </div>
                     </div>}
                 </Spring>    
