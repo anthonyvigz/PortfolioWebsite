@@ -15,11 +15,16 @@ function App() {
   let location = useLocation();
 
 
-  if(location.pathname !== "/") {
-    document.body.className = "altbody";
-  } else {
+  if(location.pathname === "/") {
     document.body.className = "mainbody";
+  } 
+  else if(location.pathname === "/skills") {
+    document.body.className = "skillsbody";
   }
+  else {
+    document.body.className = "altbody";
+  }
+
 
   let transitions = useTransition(location, location => location.pathname, {
     from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
