@@ -7,7 +7,7 @@ import { Spring } from 'react-spring/renderprops';
 
 function Skills() {
 
-  const [skill, setSkill] = useState('');
+  const [skill, setSkill] = useState('  ');
 
   const changeSkill = event => {
       event.preventDefault();
@@ -139,7 +139,34 @@ function Skills() {
                 </Spring>
                 </button>
             </div>
-            <h3>{skill}</h3>
+            <h3 className="skill">{skill}</h3>
+            <div className="managerialBlocks">
+                <div className="mBlock">
+                    <h3>Web Development</h3>
+                    <h4>ICON</h4>
+                    <p>random text</p>
+                </div>
+                <div className="mBlock">
+                    <h3>UI/UX Enhancement</h3>
+                    <h4>ICON</h4>
+                    <p>random text</p>
+                </div>
+                <div className="mBlock">
+                    <h3>Team Leadership</h3>
+                    <h4>ICON</h4>
+                    <p>random text</p>
+                </div>
+                <div className="mBlock">
+                    <h3>Graphic and Video Production</h3>
+                    <h4>ICON</h4>
+                    <p>random text</p>
+                </div>
+                <div className="mBlock">
+                    <h3>Graphic and Video Production</h3>
+                    <h4>ICON</h4>
+                    <p>random text</p>
+                </div>
+            </div>
         </div>
     </AbsoluteWrapper>
   );

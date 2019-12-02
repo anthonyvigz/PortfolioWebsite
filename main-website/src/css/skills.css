@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 10px 70px;
+    margin: 5px 70px;
     color: rgba(0, 140, 255, 0.966);
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -27,10 +27,36 @@
     width: 40px;
 }
 
-.skillsPage h3 {
+.skill {
+    display: block;
     font-size: 1.3em;
     color: rgba(58, 58, 58, 0.356);
     letter-spacing: 2px;
     margin-top: -10px;
+    margin-bottom: 5px;
     transition: 1s;
+    display: block;
+    height: 15px;
+}
+
+.managerialBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgba(0, 140, 255, 0.966);
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    padding: 15px;
+}
+
+.mBlock {
+    margin: 10px;
+    height: 225px;
+    width: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid purple 3px;
 }
