@@ -141,31 +141,66 @@ function Skills() {
             </div>
             <h3 className="skill">{skill}</h3>
             <div className="managerialBlocks">
-                <div className="mBlock">
-                    <h3>Web Development</h3>
-                    <h4>ICON</h4>
-                    <p>random text</p>
-                </div>
-                <div className="mBlock">
-                    <h3>UI/UX Enhancement</h3>
-                    <h4>ICON</h4>
-                    <p>random text</p>
-                </div>
-                <div className="mBlock">
-                    <h3>Team Leadership</h3>
-                    <h4>ICON</h4>
-                    <p>random text</p>
-                </div>
-                <div className="mBlock">
-                    <h3>Graphic and Video Production</h3>
-                    <h4>ICON</h4>
-                    <p>random text</p>
-                </div>
-                <div className="mBlock">
-                    <h3>Graphic and Video Production</h3>
-                    <h4>ICON</h4>
-                    <p>random text</p>
-                </div>
+                <Spring
+                    from={{ opacity: 0 }}
+                    to={{ opacity: 1 }}
+                    delay='1300'>
+                    {props => <div style={props}>
+                    <div className="mBlock">
+                        <h3>Web Development</h3>
+                        <i className="fa fa-laptop"></i>
+                        <p>random text</p>
+                    </div>
+                    </div>}
+                </Spring>
+                <Spring
+                    from={{ opacity: 0 }}
+                    to={{ opacity: 1 }}
+                    delay='1400'>
+                    {props => <div style={props}>
+                        <div className="mBlock">
+                            <h3>UI/UX Enhancement</h3>
+                            <i className="fas fa-cog"></i>
+                            <p>random text</p>
+                        </div>
+                    </div>}
+                </Spring>
+                <Spring
+                    from={{ opacity: 0 }}
+                    to={{ opacity: 1 }}
+                    delay='1500'>
+                    {props => <div name="resp" style={props}>
+                        <div className="mBlock">
+                            <h3>Responsive Design</h3>
+                            <i className="far fa-window-restore"></i>
+                            <p>random text</p>
+                        </div>
+                    </div>}
+                </Spring>
+                <Spring
+                    from={{ opacity: 0 }}
+                    to={{ opacity: 1 }}
+                    delay='1600'>
+                    {props => <div name="leader" style={props}>
+                        <div className="mBlock">
+                            <h3>Team Leadership</h3>
+                            <i className="fas fa-chalkboard-teacher"></i>
+                            <p>random text</p>
+                        </div>
+                    </div>}
+                </Spring>
+                <Spring
+                    from={{ opacity: 0 }}
+                    to={{ opacity: 1 }}
+                    delay='1700'>
+                    {props => <div name="vid" style={props}>
+                        <div className="mBlock">
+                            <h3>Graphic and Video Production</h3>
+                            <i className="fas fa-video"></i>
+                            <p>random text</p>
+                        </div>
+                    </div>}
+                </Spring>    
             </div>
         </div>
     </AbsoluteWrapper>

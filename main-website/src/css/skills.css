@@ -28,9 +28,9 @@
 
 .skill {
     display: block;
-    font-size: 1.3em;
+    font-size: 0.9em;
     color: rgba(7, 94, 255, 0.356);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-top: -10px;
     margin-bottom: 5px;
     transition: 1s;
@@ -59,10 +59,19 @@
     background-color: white;
     border-radius: 3px;
     transition: 0.5s;
+    border: rgba(0, 140, 255, 0.966) 1px solid;
 }
 
 .mBlock:hover {
     border-bottom: rgba(0, 140, 255, 0.966) 5px solid;
     transform: translate(0px, -5px);
     transition: 0.5s;
+}
+
+.mBlock i {
+    font-size: 1.8em;
+}
+
+.mBlock h3 {
+    color: rgba(0, 0, 0, 0.897);
 }
