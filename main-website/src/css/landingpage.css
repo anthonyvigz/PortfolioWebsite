@@ -7,31 +7,93 @@
     align-items: left;
     text-align: left;
     margin: 50px 70px 0 70px;
-    width: 50%;
+    width: 40%;
     color: white;
     font-family: 'Raleway', sans-serif;
+    transition: 1s;
 }
 
 .homeBlock button {
     padding: 8px;
-    font-size: 1.9em;
+    font-size: 2.5vw;
     font-weight: bold;
     background-color: white;
     color: rgba(0, 140, 255, 0.76);
     letter-spacing: 2px;
     border-radius: 4px;
     border: none;
-    width: 120px;
+    width: 200px;
+    transition: 0.5s;
 }
 
 .homeBlock h2 {
-    font-size: 2.7em;
+    font-size: 3.7vw;
     font-weight: bold;
+    letter-spacing: 2px;
+    transition: 1s;
 }
 
 .homeBlock p {
     margin-top: -10px;
     letter-spacing: 2px;
     font-weight: bold;
-    line-height: 28px;
+    line-height: 50px;
+    font-size: 1.3vw;
+    color: rgba(255, 255, 255, 0.794);
+    transition: 1s;
+}
+
+
+/*  SEMI LARGE PAGE */
+
+@media (max-width: 1200px) {
+    
+    .homeBlock button {
+        width: 120px;
+        font-size: 1.8em;
+    }
+
+    .homeBlock p {
+        line-height: 35px;
+        font-size: 1em;
+    }
+
+    .homeBlock h2 {
+        font-size: 2.8em;
+    }
+}
+
+/* TABLET PAGE */
+
+@media (max-width: 949px) {
+
+    .homeBlock button {
+        width: 120px;
+        font-size: 1.8em;
+    }
+
+    .homeBlock p {
+        line-height: 35px;
+        font-size: 1em;
+    }
+
+    .homeBlock h2 {
+        font-size: 2.8em;
+    }
+
+    .homeBlock {
+        width: 50%;
+    }
+  }
+
+/* MOBILE PAGE */
+
+@media (max-width: 575px) {
+
+    .homeBlock {
+        align-items: center;
+        text-align: center;
+        margin: 50px auto;
+        height: 100%;
+    }
 }

@@ -19,7 +19,7 @@ function App() {
   if(location.pathname === "/") {
     document.body.className = "mainbody";
   } 
-  else if(location.pathname === "/skills" || "/work") {
+  else if(location.pathname === "/skills" || location.pathname === "/work") {
     document.body.className = "skillsbody";
   }
   else {

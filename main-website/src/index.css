@@ -1,3 +1,11 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .mainbody {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -29,6 +37,7 @@
   position: relative;
   height: 100vh;
   transition: opacity 1s;
+  overflow-y: hidden;
 }
 
 .skillsbody {
@@ -82,13 +91,15 @@ code {
 
 .navbar h1 {
   letter-spacing: 3px;
-  font-size: 1.5em;
+  font-size: 2vw;
+  transition: 1s;
 }
 
 .links {
   display: flex;
   width: 60%;
   justify-content: space-evenly;
+  transition: 1s;
 }
 
 .links .selected {
@@ -99,14 +110,76 @@ code {
 .as {
   color: white;
   text-decoration: none;
-  font-size: 1.0em;
+  font-size: 1.3vw;
   transition: 0.5s;
 }
 
 .linksAlt {
   color: rgba(0, 140, 255, 0.76);
   text-decoration: none;
+  font-size: 1.3vw;
+  transition: 1s;
 }
 
+/* SEMI LARGE PAGE */
 
+@media (max-width: 1200px) {
+    
+  .as {
+    font-size: 1.1em;
+  }
 
+  .linksAlt {
+    font-size: 1em;
+  }
+  
+  .navbar h1 {
+    font-size: 1.6em;
+  }
+}
+
+/* TABLET PAGE */
+
+@media (max-width: 949px) {
+  .navbar {
+    flex-direction: column;
+  
+  }
+
+  .links {
+    width: 90%;
+  }
+}
+
+/* MOBILE PAGE */
+
+@media (max-width: 575px) {
+
+  .links {
+    flex-direction: column;
+    width: 100%;
+    align-items: space-evenly;
+    margin-bottom: -40px;
+  }
+
+  .as {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+
+  .linksAlt {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+  
+  .navbar h1 {
+    font-size: 1.9em;
+  }
+
+  .mainbody {
+    background: none;
+    background-color: rgba(0, 140, 255, 0.651);
+    background-size: cover;
+    height: 100vh;
+  }
+}
