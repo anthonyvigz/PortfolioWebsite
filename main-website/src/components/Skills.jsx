@@ -20,7 +20,6 @@ function Skills() {
   return (
     <AbsoluteWrapper>
         <div className="skillsPage">
-            <h1 className="tech">Technical Skills</h1>
             <div className="skillsBlock">
                 {/* HTML */}
                 <button onMouseEnter={changeSkill} name="HTML5">

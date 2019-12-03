@@ -5,6 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
+import Work from './components/Work';
 import AbsoluteWrapper from './components/AbsoluteWrapper';
 import NavBar from './components/NavBar';
 import './App.css';
@@ -18,7 +19,7 @@ function App() {
   if(location.pathname === "/") {
     document.body.className = "mainbody";
   } 
-  else if(location.pathname === "/skills") {
+  else if(location.pathname === "/skills" || "/work") {
     document.body.className = "skillsbody";
   }
   else {
@@ -43,6 +44,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/skills" component={Skills} />
+              <Route exact path="/work" component={Work} />
             </Switch>
           </animated.div>
           ))} 
