@@ -15,7 +15,7 @@ function About() {
                     delay='200'>
                     {props => <div style={props}>
                         <div className="dummyBlock">
-                            <img src={dummyPortrait} width="400" />
+                            <img className="portrait"src={dummyPortrait} />
                         </div>
                         </div>}
                 </Spring>
@@ -57,6 +57,7 @@ function About() {
                 </Spring>
                 </div>
         </div>
+        <div className="bottomBorder"></div>
     </AbsoluteWrapper>
   );
 }

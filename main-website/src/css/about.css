@@ -1,6 +1,5 @@
 .aboutBlock {
     display: flex;
-    justify-content: space-between;
     margin: 10px 70px;
     color: rgba(0, 140, 255, 0.966);
     font-family: 'Raleway', sans-serif;
@@ -9,8 +8,9 @@
     padding: 15px;
 }
 
-.dummyBlock {
-    width: 500px;
+.portrait {
+    width: 95%;
+    transition: 1s;
 }
 
 .aboutInfo {
@@ -22,22 +22,107 @@
 
 .aboutInfo h2 {
     margin-bottom: -5px;
-    font-size: 1.2em;
+    font-size: 1.7vw;
     color: black;
     letter-spacing: 1.5px;
+    transition: 1s;
 }
 
 .aboutInfo h1 {
     margin-bottom: -2px;
+    font-size: 2.2vw;
+    transition: 1s;
+    line-height: 40px;
 }
 
 .aboutInfo p {
     letter-spacing: 1.2px;
-    line-height: 25px;
-    font-size: 0.9em;
-    color: #777;
+    line-height: 40px;
+    font-size: 1vw;
+    color: rgb(93, 93, 93);
+    transition: 1s;
 }
 
-.aboutBlock img {
-    width: 350px;
+.bottomBorder {
+    margin-top: -29px;
+    width: 100%;
+    background-color: rgba(51, 139, 255, 0.137);
+    height: 100vh;
+    transition: 1s;
+}
+
+/* SEMI LARGE PAGE */
+
+@media (max-width: 1200px) {
+    .bottomBorder {
+        background-color: rgba(3, 32, 70, 0);
+    }
+    .aboutInfo h2 {
+        font-size: 1.3em;
+        letter-spacing: 1.5px;
+    }
+    
+    .aboutInfo h1 {
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+    
+    .aboutInfo p {
+        line-height: 30px;
+        font-size: 0.8em;
+    }
+    .portrait {
+        width: 95%;
+    }
+}
+
+/* TABLET PAGE */
+
+@media (max-width: 949px) {
+    .aboutInfo h2 {
+        font-size: 1.1em;
+        letter-spacing: 1.5px;
+    }
+    
+    .aboutInfo h1 {
+        font-size: 1.3em;
+        line-height: 30px;
+    }
+    
+    .aboutInfo p {
+        line-height: 25px;
+        font-size: 0.7em;
+    }
+
+    .portrait {
+        width: 85%;
+    }
+    .bottomBorder {
+        display: none;
+    }
+}
+
+/* SEMI TABLET */
+
+@media (max-width: 840px) {
+    .aboutBlock {
+        flex-direction: column;
+    }
+    .altbody {
+        overflow-y: visible;
+    }
+    .bottomBorder {
+        display: none;
+    }
+    .aboutInfo {
+        text-align: center;
+    }
+
+}
+
+/* MOBILE PAGE */
+
+@media (max-width: 575px) {
+
+
 }
