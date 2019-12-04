@@ -7,22 +7,12 @@ function ProjectBlock(props) {
 
     let image = props.image;
 
-    const [display, setDisplay] = useState({display: "none"})
-
-    const makeVisible = event => {
-        event.preventDefault();
-
-        console.log(display);
-
-        setDisplay({display: "flex", backgroundColor: "red"})
-    }
-
   return (
-    <div onMouseEnter={makeVisible} className="mainBlock">
+    <div className="mainBlock">
         <img className="projectImg" src={image} alt="test" width="300px" />
-        <div className="hoverBlock" style={display}>
+        <div className="hoverBlock" style={{backgroundColor: props.color}}>
             <h1 className="projectTitle">{props.name}</h1>
-            <h2 className="projectDesc">{props.link}</h2>
+            <h2 className="projectDesc">{props.description}</h2>
             <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
         </div>
     </div>
