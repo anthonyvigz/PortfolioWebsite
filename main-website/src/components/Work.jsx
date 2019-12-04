@@ -36,6 +36,8 @@ function Work() {
 
   return (
     <AbsoluteWrapper>
+        <h5 className="projectsHeader">Projects</h5>
+        <h5 className="emptyBorder"></h5>
         <div className="workPage">
             {projects.map( project => {
                 console.log(project)

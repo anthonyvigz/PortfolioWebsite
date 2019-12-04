@@ -88,3 +88,9 @@
     line-height: 25px;
     color: rgba(10, 8, 8, 0.651);
 }
+
+/* SEMI LARGE PAGE */
+
+@media (max-width: 1200px) {
+
+}

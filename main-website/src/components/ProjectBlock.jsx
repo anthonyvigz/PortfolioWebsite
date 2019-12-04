@@ -9,7 +9,7 @@ function ProjectBlock(props) {
 
   return (
     <div className="mainBlock">
-        <img className="projectImg" src={image} alt="test" width="300px" />
+        <img className="projectImg" src={image} alt="test" width="340px" />
         <div className="hoverBlock" style={{backgroundColor: props.color}}>
             <h1 className="projectTitle">{props.name}</h1>
             <h2 className="projectDesc">{props.description}</h2>
