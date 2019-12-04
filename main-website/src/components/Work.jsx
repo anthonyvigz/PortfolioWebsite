@@ -3,6 +3,7 @@ import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/work.css';
 import { Spring } from 'react-spring/renderprops';
 import ProjectBlock from './ProjectBlock';
+import hoggerImage from '../img/hoggerimage.png'
 
 function Work() {
 
@@ -10,11 +11,13 @@ function Work() {
     const projects = [
         { 
           name: "Hogger",
-          link: "www.asdasd.com"
+          link: "www.asdasd.com",
+          image: hoggerImage
         },
         { 
           name: "Project",
-          link: "wasd.com"
+          link: "wasd.com",
+          image: hoggerImage
         }
     ];
 
@@ -24,7 +27,7 @@ function Work() {
             {projects.map( project => {
                 console.log(project)
                 return (
-                    <ProjectBlock name={project.name} link={project.link} />
+                    <ProjectBlock image={project.image} name={project.name} link={project.link} />
                 )
             })}
         </div>

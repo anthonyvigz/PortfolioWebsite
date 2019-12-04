@@ -5,6 +5,8 @@ import { Spring } from 'react-spring/renderprops';
 
 function ProjectBlock(props) {
 
+    let image = props.image;
+
     const [display, setDisplay] = useState({display: "none"})
 
     const makeVisible = event => {
@@ -17,7 +19,7 @@ function ProjectBlock(props) {
 
   return (
     <div onMouseEnter={makeVisible} className="mainBlock">
-        <img className="projectImg" src="https://www.howtofascinate.com/wp-content/uploads/Mystique-background-personality-test.jpg" alt="test" width="300px" />
+        <img className="projectImg" src={image} alt="test" width="300px" />
         <div className="hoverBlock" style={display}>
             <h1 className="projectTitle">{props.name}</h1>
             <h2 className="projectDesc">{props.link}</h2>
