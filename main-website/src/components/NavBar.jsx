@@ -24,7 +24,7 @@ function NavBar() {
                 <NavLink className={asp} activeClassName="selected" to="/about">About</NavLink>
                 <NavLink className={asp} activeClassName="selected" to="/skills">Skills</NavLink>
                 <NavLink className={asp} activeClassName="selected" to="/work">Work</NavLink>
-                <a className={asp} href="#" >Resume</a>
+                <NavLink className={asp} activeClassName="selected" to="/resume">Resume</NavLink>
                 <a className={asp} href="#" >Contact</a>
             </div>
             </nav>

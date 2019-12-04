@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Work from './components/Work';
+import Resume from './components/Resume';
 import AbsoluteWrapper from './components/AbsoluteWrapper';
 import NavBar from './components/NavBar';
 import './App.css';
@@ -45,6 +46,7 @@ function App() {
               <Route exact path="/about" component={About} />
               <Route exact path="/skills" component={Skills} />
               <Route exact path="/work" component={Work} />
+              <Route exact path="/resume" component={Resume} />
             </Switch>
           </animated.div>
           ))} 
