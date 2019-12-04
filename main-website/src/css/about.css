@@ -55,7 +55,7 @@
 
 @media (max-width: 1200px) {
     .bottomBorder {
-        background-color: rgba(3, 32, 70, 0);
+        display: none;
     }
     .aboutInfo h2 {
         font-size: 1.3em;
@@ -73,6 +73,9 @@
     }
     .portrait {
         width: 95%;
+    }
+    .altbody {
+        overflow-y: visible;
     }
 }
 
@@ -99,6 +102,9 @@
     }
     .bottomBorder {
         display: none;
+    }
+    .altbody {
+        overflow-y: visible;
     }
 }
 
