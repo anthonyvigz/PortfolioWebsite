@@ -139,6 +139,7 @@ function Skills() {
                 </Spring>
                 </button>
             </div>
+            <h5 className="emptyBorder"></h5>
             <h3 className="skill">{skill}</h3>
             <div className="managerialBlocks">
                 <Spring

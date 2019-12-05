@@ -26,8 +26,9 @@
     font-size: 2.7em;
     font-family: 'Poppins', sans-serif;
     background-color: rgba(255, 255, 255, 0.603);
-    padding: 5px 10px;
+    padding: 10px;
     margin-bottom: 0px;
+    border-top: 3px solid rgba(0, 140, 255, 0.089);
 }
 
 .projectsHeader:focus {
@@ -37,7 +38,7 @@
 .emptyBorder {
     margin: 0 auto;
     width: 50px;
-    border-top: rgba(0, 60, 255, 0.849) solid 4px;
+    border-top: rgba(0, 140, 255, 0.966) solid 4px;
 }
 
 .projectImg {

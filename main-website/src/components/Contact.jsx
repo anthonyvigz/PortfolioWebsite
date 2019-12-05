@@ -9,7 +9,8 @@ function Contact(props) {
   return (
       <AbsoluteWrapper>
         <div className="contactBlock">
-            CONTACT PAGE
+          <h5 className="projectsHeader">Contact</h5>
+          <h5 className="emptyBorder"></h5>
         </div>
       </AbsoluteWrapper>
   );
