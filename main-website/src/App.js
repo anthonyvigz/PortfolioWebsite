@@ -7,6 +7,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 import AbsoluteWrapper from './components/AbsoluteWrapper';
 import NavBar from './components/NavBar';
 import './App.css';
@@ -20,7 +21,7 @@ function App() {
   if(location.pathname === "/") {
     document.body.className = "mainbody";
   } 
-  else if(location.pathname === "/skills" || location.pathname === "/work") {
+  else if(location.pathname === "/skills" || location.pathname === "/work" || location.pathname === "/resume") {
     document.body.className = "skillsbody";
   }
   else {
@@ -47,6 +48,7 @@ function App() {
               <Route exact path="/skills" component={Skills} />
               <Route exact path="/work" component={Work} />
               <Route exact path="/resume" component={Resume} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
           </animated.div>
           ))} 
