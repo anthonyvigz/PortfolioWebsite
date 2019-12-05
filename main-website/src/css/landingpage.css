@@ -44,28 +44,25 @@
 }
 
 .middle {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    text-align: center;
 }
 
 .middle a {
     display: inline-block;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     background: white;
     margin: 10px;
     border-radius: 30%;
-    color: #3498db;
+    color: rgba(0, 140, 255, 0.76);
     overflow: hidden;
     position: relative;
     border: solid white 2px;
+    text-align: center;
 }
 
 .middle a i {
-    line-height: 90px;
+    line-height: 60px;
     font-size: 26px;
     transition: 0.2s linear;
 }
@@ -73,15 +70,15 @@
 .middle a:hover i{
     transform: scale(1.3);
     color: #f1f1f1;
-
 }
+
 
 .middle a::before {
     content: "";
     position: absolute;
     width: 120%;
     height: 120%;
-    background: #3498db;
+    background: rgba(0, 140, 255, 0.76);
     transform: rotate(45deg);
     left: -110%;
     top: 90%;

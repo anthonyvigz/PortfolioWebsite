@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/work.css';
-import '../css/resume.css';
 import { Spring } from 'react-spring/renderprops';
 import ProjectBlock from './ProjectBlock';
 import hoggerImage from '../img/hoggerimage.png'
@@ -14,21 +13,21 @@ function Work() {
     const projects = [
         { 
             name: "Hogger",
-            link: "www.asdasd.com",
+            link: "https://github.com/steveo-app",
             image: hoggerImage,
             color: "rgba(6, 100, 207, 0.39)",
             description: "Disc Golf Mobile App"
         },
         { 
             name: "PropMan",
-            link: "www.asdasd.com",
+            link: "https://github.com/Lambda-School-Labs/property-manager-fe",
             image: propmanImage,
             color: "rgba(14, 123, 49, 0.39)",
             description: "Property Manager"
         },
         {
             name: "Eventr",
-            link: "www.asdasd.com",
+            link: "https://github.com/Eventr-online",
             image: eventrImage,
             color: "rgba(228, 101, 48, 0.39)",
             description: "Event Hosting Application"

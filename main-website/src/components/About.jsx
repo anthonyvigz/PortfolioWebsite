@@ -20,41 +20,41 @@ function About() {
                         </div>}
                 </Spring>
                 <div className="aboutInfo">
-                <Spring
-                    from={{ opacity: 0 }}
-                    to={{ opacity: 1 }}
-                    delay='400'>
-                    {props => <div style={props}>
-                        <h2>About Anthony</h2>
-                    </div>}
-                </Spring>
-                <Spring
-                    from={{ opacity: 0 }}
-                    to={{ opacity: 1 }}
-                    delay='500'>
-                    {props => <div style={props}>
-                        <h1>A professional web developer with a continuous yearn to learn.</h1>
-                    </div>}
-                </Spring>
-                <Spring
-                    from={{ opacity: 0 }}
-                    to={{ opacity: 1 }}
-                    delay='700'>
-                    {props => <div style={props}>
-                        <p>
-                            Initially being from the media communications field, 
-                            Anthony sought to further increase his knowledge in web 
-                            development and computer programming. Anthony is a full 
-                            stack web developer who has gained deep knowledge of 
-                            front-end and back-end development frameworks and libraries
-                            through intensive training courses. He finds that his 
-                            advanced skills in graphic design and video production give 
-                            him a creative cutting edge in providing solutions within 
-                            any environment he works in. After working with the ability 
-                            to provide clear and productive work behind any platform.
-                        </p>
-                    </div>}
-                </Spring>
+                    <Spring
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}
+                        delay='400'>
+                        {props => <div style={props}>
+                            <h2>About Anthony</h2>
+                        </div>}
+                    </Spring>
+                    <Spring
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}
+                        delay='500'>
+                        {props => <div style={props}>
+                            <h1>A professional web developer with a continuous yearn to learn.</h1>
+                        </div>}
+                    </Spring>
+                    <Spring
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}
+                        delay='700'>
+                        {props => <div style={props}>
+                            <p>
+                                Initially being from the media communications field, 
+                                Anthony sought to further increase his knowledge in web 
+                                development and computer programming. Anthony is a full 
+                                stack web developer who has gained deep knowledge of 
+                                front-end and back-end development frameworks and libraries
+                                through intensive training courses. He finds that his 
+                                advanced skills in graphic design and video production give 
+                                him a creative cutting edge in providing solutions within 
+                                any environment he works in. After working with the ability 
+                                to provide clear and productive work behind any platform.
+                            </p>
+                        </div>}
+                    </Spring>
                 </div>
         </div>
         <div className="bottomBorder"></div>

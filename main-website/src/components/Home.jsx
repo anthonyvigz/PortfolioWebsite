@@ -21,16 +21,23 @@ function Home() {
                 I have a passion for crisp design and flawless functionality.
             </p>
             <div class="middle">
-              <a href="#">
-                <i className="fab fa-facebook-f"></i>
+              <a target="_blank" href="https://github.com/anthonyvigz">
+                <i className="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/anthonyvigliotta/">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+              <a target="_blank" href="https://twitter.com/anthonyvigz">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a target="_blank" href={resume}>
+                <i className="fas fa-file"></i>
               </a>
             </div>
-            <form method="get" action={resume} target="_blank">
-              <button type="submit" className="downloadResume">Download Resume</button>
-            </form>
         </div>
     </AbsoluteWrapper>
   );
 }
+
 
 export default Home;
