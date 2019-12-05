@@ -10,8 +10,16 @@
     border-radius: 100px;
     border: none;
     font-family: 'Poppins', sans-serif;
-    transition: 1s;
+    transition: 1.5s;
     height: 200px;
+}
+
+
+.downloadResume:hover {
+    width: 375px;
+    font-size: 3em;
+    background-color: rgba(0, 117, 184, 0.404);
+
 }
 
 @media (max-width: 575px) {

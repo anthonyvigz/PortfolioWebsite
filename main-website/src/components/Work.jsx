@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/work.css';
+import '../css/resume.css';
 import { Spring } from 'react-spring/renderprops';
 import ProjectBlock from './ProjectBlock';
 import hoggerImage from '../img/hoggerimage.png'

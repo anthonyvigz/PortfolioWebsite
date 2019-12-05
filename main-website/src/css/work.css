@@ -98,8 +98,17 @@
     }
 }
 
+/* */
+
 @media (min-width: 1600px) {
     .projectImg {
         width: 450px;
+      }
+}
+/* */
+
+@media (max-width: 1260px) {
+    .projectImg {        
+        width: 275px;
       }
 }

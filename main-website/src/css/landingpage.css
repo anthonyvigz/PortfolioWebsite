@@ -13,7 +13,7 @@
     transition: 1s;
 }
 
-.homeBlock button {
+.hello {
     padding: 8px;
     font-size: 2.5vw;
     font-weight: bold;
@@ -42,6 +42,71 @@
     color: rgba(255, 255, 255, 0.794);
     transition: 1s;
 }
+
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.middle a {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: white;
+    margin: 10px;
+    border-radius: 30%;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+    border: solid white 2px;
+}
+
+.middle a i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.middle a:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+
+}
+
+.middle a::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.middle a:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%
+    }50%{
+        left: 10%;
+        top: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
 
 
 /*  SEMI LARGE PAGE */

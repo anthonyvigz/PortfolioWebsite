@@ -114,11 +114,19 @@ code {
   transition: 0.5s;
 }
 
+.as:hover {
+  color: rgba(85, 228, 253, 0.774);
+}
+
 .linksAlt {
   color: rgba(0, 140, 255, 0.76);
   text-decoration: none;
   font-size: 1.3vw;
   transition: 1s;
+}
+
+.linksAlt:hover {
+  color: rgba(60, 0, 255, 0.664);
 }
 
 /* SEMI LARGE PAGE */
