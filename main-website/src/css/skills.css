@@ -107,8 +107,9 @@
     color: rgba(10, 8, 8, 0.651);
 }
 
-/* SEMI LARGE PAGE */
-
-@media (max-width: 1200px) {
-
+/* MOBILE */
+@media (max-width: 575px) {
+    .skill {
+        margin-top: 50px;
+    }
 }

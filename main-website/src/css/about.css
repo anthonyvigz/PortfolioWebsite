@@ -129,6 +129,8 @@
 /* MOBILE PAGE */
 
 @media (max-width: 575px) {
+    .aboutBlock {
+        margin-top: 0;
 
-
+    }
 }

@@ -46,6 +46,8 @@
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  width: 340px;
+  transition: 1s;
 }
 
 .hoverBlock {
@@ -94,4 +96,10 @@
     .projectsHeader {
         margin-top: 10px;
     }
+}
+
+@media (min-width: 1600px) {
+    .projectImg {
+        width: 450px;
+      }
 }
