@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import AbsoluteWrapper from './AbsoluteWrapper';
-import resume from "../img/AnthonyVigliottaResumeMaster2.pdf";
+import resume from "../img/AnthonyVigliottaResume.pdf";
 import '../css/resume.css';
 
 function Home() {
