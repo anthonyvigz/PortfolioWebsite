@@ -1,7 +1,7 @@
 import React from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/about.css';
-import dummyPortrait from '../img/portrait5.png';
+import dummyPortrait from '../img/portrait56.png';
 import { Spring } from 'react-spring/renderprops';
 
 function About() {

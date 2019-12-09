@@ -12,10 +12,10 @@ function Contact(props) {
           <h5 className="projectsHeader">Contact</h5>
           <h5 className="emptyBorder"></h5>
           <h7>Have a question or want to work together?</h7>
-          <form>
+          <form className="contactForm">
             <input type="text" placeholder="Name"></input>
             <input type="text" placeholder="email"></input>
-            <textarea type="text" placeholder="Your message" rows="4" cols="50"></textarea>
+            <textarea rows="4" cols="50" type="text" placeholder="Your message" rows="4" cols="50"></textarea>
             <button>Submit</button>
           </form>
         </div>
