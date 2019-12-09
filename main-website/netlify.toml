@@ -1,4 +1,3 @@
 [build]
     command = "npm run build"
-    publish = "main-website/build"
-    base = "main-website"
+    publish = "build"
