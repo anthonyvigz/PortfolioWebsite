@@ -91,3 +91,13 @@ h7 {
     z-index: 1;
     transition: 1s;
 }
+
+/* MOBILE */
+@media (max-width: 575px) {
+    .contactForm {
+        margin-bottom: 20px;
+        width: 80%;
+        transition: 1s;
+    }
+   
+}

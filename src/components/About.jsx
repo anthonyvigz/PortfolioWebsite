@@ -42,16 +42,12 @@ function About() {
                         delay='700'>
                         {props => <div style={props}>
                             <p>
-                                Initially being from the media communications field, 
-                                Anthony sought to further increase his knowledge in web 
-                                development and computer programming. Anthony is a full 
-                                stack web developer who has gained deep knowledge of 
-                                front-end and back-end development frameworks and libraries
-                                through intensive training courses. He finds that his 
-                                advanced skills in graphic design and video production give 
-                                him a creative cutting edge in providing solutions within 
-                                any environment he works in. After working with the ability 
-                                to provide clear and productive work behind any platform.
+                                Initially being from the media communications field, Anthony is a full stack web developer who has gained deep knowledge of 
+                                front-end and back-end frameworks and libraries through intensive training courses. He finds that his 
+                                extensive experience in graphic design and video production give him a creative cutting edge in providing solutions within 
+                                any technical environment he works in. 
+                                Anthony is excited to work with motivated and open-minded people that want to tackle big challenges and 
+                                make even bigger impacts in software and web development.
                             </p>
                         </div>}
                     </Spring>
