@@ -45,7 +45,9 @@ class Contact extends Component {
 
           console.log(popup);
 
-          popup.style.display = 'block';
+          popup.style.opacity = '1';
+
+          setTimeout(function(){ popup.style.opacity = '0' }, 3000)
           
         })
         .catch((err) => {
@@ -60,7 +62,7 @@ class Contact extends Component {
     return (
         <AbsoluteWrapper>
           <div className="contactBlock">
-            <div id="popUp" style={{display: 'none'}}>Sent!</div>
+            <div id="popUp" style={{opacity: '0'}}>Sent!</div>
             <h5 className="projectsHeader">Contact</h5>
             <h5 className="emptyBorder"></h5>
             <h7>Have a question or want to work together?</h7>
