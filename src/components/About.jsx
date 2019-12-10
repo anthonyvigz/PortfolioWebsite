@@ -15,7 +15,7 @@ function About() {
                     delay='200'>
                     {props => <div style={props}>
                         <div className="dummyBlock">
-                            <img className="portrait"src={dummyPortrait} />
+                            <img alt="portrait" className="portrait"src={dummyPortrait} />
                         </div>
                         </div>}
                 </Spring>

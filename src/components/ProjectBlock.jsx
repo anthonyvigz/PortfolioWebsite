@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import AbsoluteWrapper from './AbsoluteWrapper';
+import React from 'react';
 import '../css/work.css';
-import { Spring } from 'react-spring/renderprops';
 
 function ProjectBlock(props) {
 
@@ -9,7 +7,7 @@ function ProjectBlock(props) {
     let link = props.link;
 
   return (
-    <a target="_blank" href={link}>
+    <a target="_blank" rel="noopener noreferrer" href={link}>
       <div className="mainBlock">
           <img className="projectImg" src={image} alt="test" />
           <div className="hoverBlock" style={{backgroundColor: props.color}}>

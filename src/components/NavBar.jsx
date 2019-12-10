@@ -1,6 +1,6 @@
 import React from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
-import { Link, NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   let location = useLocation();

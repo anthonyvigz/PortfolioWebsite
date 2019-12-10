@@ -1,7 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/contact.css';
-import { Spring } from 'react-spring/renderprops';
 import * as emailjs from 'emailjs-com'
 
 class Contact extends Component {
@@ -71,12 +70,12 @@ class Contact extends Component {
           <div className="contactBlock">
             <div id="popUp" style={{opacity: '0'}}>Sent!</div>
             <h5 className="projectsHeader">Contact</h5>
-            <h5 className="emptyBorder"></h5>
-            <h7>Have a question or want to work together?</h7>
+            <div className="emptyBorder"></div>
+            <h6>Have a question or want to work together?</h6>
             <form onSubmit={this.sendMessage} className="contactForm">
               <input onChange={this.changeHandler} value={this.state.name} name="name" type="text" placeholder="Name"></input>
-              <input onChange={this.changeHandler} value={this.state.email} name="email" type="text" placeholder="email"></input>
-              <textarea onChange={this.changeHandler} value={this.state.message} name="message" rows="4" cols="50" type="text" placeholder="Your message" rows="4" cols="50"></textarea>
+              <input onChange={this.changeHandler} value={this.state.email} name="email" type="text" placeholder="E-mail"></input>
+              <textarea onChange={this.changeHandler} value={this.state.message} name="message" type="text" placeholder="Your message" rows="4" cols="50"></textarea>
               <button type="submit">Submit</button>
             </form>
           </div>

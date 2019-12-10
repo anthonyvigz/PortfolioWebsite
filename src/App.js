@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
-import { Link, NavLink } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';

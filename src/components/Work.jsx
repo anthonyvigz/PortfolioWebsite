@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/work.css';
 import { Spring } from 'react-spring/renderprops';
@@ -37,17 +37,18 @@ function Work() {
   return (
     <AbsoluteWrapper>
         <h5 className="projectsHeader">Projects</h5>
-        <h5 className="emptyBorder"></h5>
+        <div className="emptyBorder"></div>
         <div className="workPage">
-            {projects.map( project => {
-                console.log(project)
+            {projects.map( (project, index) => {
                 return (
                     <Spring
                         from={{ opacity: 0 }}
                         to={{ opacity: 1 }}
-                        delay='200'>
+                        delay='200'
+                        key={index}
+                        >
                         {props => <div style={props}>
-                            <ProjectBlock color={project.color} description={project.description} image={project.image} name={project.name} link={project.link} />
+                            <ProjectBlock key={index} color={project.color} description={project.description} image={project.image} name={project.name} link={project.link} />
                                 </div>}
                     </Spring>
                 )
