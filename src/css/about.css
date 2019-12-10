@@ -56,6 +56,18 @@
 
 /* SEMI LARGE PAGE */
 
+@media (max-width: 1500px) {
+    .aboutInfo p {
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .aboutInfo p {
+        line-height: 40px;
+    }
+}
+
 @media (max-width: 1300px) {
     .bottomBorder {
         display: none;

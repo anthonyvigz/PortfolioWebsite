@@ -48,7 +48,6 @@ function About() {
                     </Spring>
                 </div>
         </div>
-        <div className="bottomBorder"></div>
     </AbsoluteWrapper>
   );
 }
