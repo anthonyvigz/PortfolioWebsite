@@ -33,28 +33,35 @@ class Contact extends Component {
         email: email,
        }
 
-       emailjs.send(
-        'gmail',
-        'template_SPqTzvPP',
-         templateParams,
-        'user_ok070rGofhMku7T0N56rz'
-       )
-       .then((res) => {
+      let popup = document.getElementById('popUp');
 
-          let popup = document.getElementById('popUp');
+       if(name && message && email) {
+        emailjs.send(
+          'gmail',
+          'template_SPqTzvPP',
+          templateParams,
+          'user_ok070rGofhMku7T0N56rz'
+        )
+        .then((res) => {
 
-          console.log(popup);
+            popup.style.opacity = '1';
+            popup.innerHTML = 'Sent!'
 
+            setTimeout(function(){ popup.style.opacity = '0' }, 3000)
+            
+          })
+          .catch((err) => {
+              console.error(err)
+          })
+
+          this.setState({ name: '', email: '', message: '' })
+        }
+        else {
           popup.style.opacity = '1';
+          popup.innerHTML = 'Please fill out all fields.'
 
           setTimeout(function(){ popup.style.opacity = '0' }, 3000)
-          
-        })
-        .catch((err) => {
-            console.error(err)
-})
-
-       this.setState({ name: '', email: '', message: '' });
+        }
 }
 
 

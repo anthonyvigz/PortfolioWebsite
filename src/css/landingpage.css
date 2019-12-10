@@ -157,5 +157,11 @@
         text-align: center;
         margin: 50px auto;
         height: 100%;
+        width: 80%;
+    }
+
+    .homeBlock p {
+        font-size: 0.8em;
+        width: 100%;
     }
 }
