@@ -11,7 +11,7 @@
 }
 
 .portrait {
-    width: 95%;
+    width: 600px;
     transition: 1s;
 }
 
@@ -40,9 +40,9 @@
 
 .aboutInfo p {
     letter-spacing: 1.2px;
-    line-height: 40px;
-    font-size: 1vw;
-    color: rgb(93, 93, 93);
+    line-height: 50px;
+    font-size: 1.2vw;
+    color: rgb(37, 37, 37);
     transition: 1s;
 }
 
@@ -56,7 +56,7 @@
 
 /* SEMI LARGE PAGE */
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .bottomBorder {
         display: none;
     }
@@ -71,11 +71,11 @@
     }
     
     .aboutInfo p {
-        line-height: 30px;
-        font-size: 0.8em;
+        line-height: 40px;
+        font-size: 0.9em;
     }
     .portrait {
-        width: 95%;
+        width: 500px;
     }
     .altbody {
         overflow-y: visible;
@@ -101,7 +101,7 @@
     }
 
     .portrait {
-        width: 85%;
+        width: 300px;
     }
     .bottomBorder {
         display: none;

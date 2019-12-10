@@ -1,7 +1,7 @@
 import React from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/about.css';
-import dummyPortrait from '../img/portrait9.png';
+import dummyPortrait from '../img/portraitfinal.png';
 import { Spring } from 'react-spring/renderprops';
 
 function About() {
@@ -23,17 +23,9 @@ function About() {
                     <Spring
                         from={{ opacity: 0 }}
                         to={{ opacity: 1 }}
-                        delay='400'>
-                        {props => <div style={props}>
-                            <h2>About Anthony</h2>
-                        </div>}
-                    </Spring>
-                    <Spring
-                        from={{ opacity: 0 }}
-                        to={{ opacity: 1 }}
                         delay='500'>
                         {props => <div style={props}>
-                            <h1>A professional web developer with a continuous yearn to learn.</h1>
+                            <h1>A professional web developer with experience across all creative platforms.</h1>
                         </div>}
                     </Spring>
                     <Spring
@@ -42,12 +34,15 @@ function About() {
                         delay='700'>
                         {props => <div style={props}>
                             <p>
-                                Initially being from the media communications field, Anthony is a full stack web developer who has gained deep knowledge of 
-                                front-end and back-end frameworks and libraries through intensive training courses. He finds that his 
-                                extensive experience in graphic design and video production give him a creative cutting edge in providing solutions within 
-                                any technical environment he works in. 
-                                Anthony is excited to work with motivated and open-minded people that want to tackle big challenges and 
-                                make even bigger impacts in software and web development.
+                                I am a full stack web developer who creates compelling websites 
+                                and user-friendly apps. Through the Lambda School intensive training 
+                                course, I mastered engineering intuitive and dynamic user interfaces 
+                                that are both efficient and secure. My extensive experience in graphic 
+                                design and video production, as well as my education in media 
+                                communications, give me the creative cutting edge in providing practical 
+                                and effective solutions within any technical environment. I am eager to 
+                                work with motivated and open-minded people that are ready to tackle big 
+                                challenges and produce innovative results in software and web development. 
                             </p>
                         </div>}
                     </Spring>
