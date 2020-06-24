@@ -25,8 +25,8 @@ function Work() {
       description: "Disc Golf Mobile App",
     },
     {
-      name: "PropMan",
-      link: "https://github.com/Lambda-School-Labs/property-manager-fe",
+      name: "Freehold",
+      link: "https://freehold.dev",
       image: propmanImage,
       color: "rgba(14, 123, 49, 0.39)",
       description: "Property Manager",
