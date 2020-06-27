@@ -255,7 +255,7 @@ function Skills() {
                   <i className="fa fa-laptop"></i>
                   <h3>Web Development</h3>
                   <p>
-                    Can create and modify web content from the ground up using
+                    I can create and modify web content from the ground up using
                     various front-end frameworks and database interfaces.
                   </p>
                 </div>
@@ -269,7 +269,7 @@ function Skills() {
                   <i className="fas fa-cog"></i>
                   <h3>UI/UX Enhancement</h3>
                   <p>
-                    With a strong history in graphic design; I have a knack for
+                    With a strong history in graphic design, I have a knack for
                     producing eye-popping and user friendly interfaces.
                   </p>
                 </div>
@@ -312,7 +312,7 @@ function Skills() {
                   <i className="fas fa-video"></i>
                   <h3>Graphic and Video Production</h3>
                   <p>
-                    Having mastered the Adobe Creative Suite; I am an
+                    Having mastered the Adobe Creative Suite, I am an
                     outstanding candidate with a unique skillset in photo and
                     video production.
                   </p>

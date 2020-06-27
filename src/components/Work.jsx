@@ -135,6 +135,7 @@ function Work() {
       <h5 className="projectsHeader">Demo Video</h5>
       <div className="emptyBorder"></div>
       <iframe
+        title="TouchBaseDemo"
         src="https://player.vimeo.com/video/406958066"
         width="640"
         height="360"
