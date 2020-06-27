@@ -17,7 +17,36 @@ export default function WorkPiece(props) {
     >
       <img width="300" src={props.piece.imagelink} alt={props.index} />
       <div className="overlay" style={{ backgroundColor: props.piece.color }}>
-        <div className="pieceInfo">HELLO</div>
+        {props.piece.website ? (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.piece.website}
+            className="website"
+          >
+            <i class="far fa-browser"></i>
+          </a>
+        ) : null}
+        {props.piece.github ? (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.piece.github}
+            className="github"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        ) : null}
+        <div className="pieceInfo">
+          <h4 className="workTitle">{props.piece.name}</h4>
+          <h5 className="workDesc">{props.piece.description}</h5>
+        </div>
+        <div className="frameworks">
+          <h6 className="frameworksTitle">Frameworks:</h6>
+          {props.piece.frameworks.map((fw) => {
+            return <h7>{fw}</h7>;
+          })}
+        </div>
       </div>
     </motion.div>
   );

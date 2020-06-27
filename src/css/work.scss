@@ -156,6 +156,29 @@ iframe {
       0 100px 80px rgba(0, 0, 0, 0.12);
     cursor: pointer;
 
+    .pieceInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -5px;
+
+      .workTitle {
+        font-size: 0.85em;
+        margin: 0;
+        letter-spacing: 1.2px;
+      }
+
+      .workDesc {
+        display: block;
+        white-space: wrap;
+        margin-top: 10px;
+        font-size: 0.6em;
+        letter-spacing: 1.1px;
+        width: 250px;
+      }
+    }
+
     img {
       border-radius: 5px;
       display: block;
@@ -172,10 +195,61 @@ iframe {
       height: 100%;
       transition: 0.5s ease;
       border-radius: 5px;
+      opacity: 0.9;
+
+      .website {
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        background: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        i {
+          color: white;
+          font-size: 1.5em;
+        }
+      }
+
+      .github {
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        background: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        i {
+          color: white;
+          font-size: 1.5em;
+        }
+      }
+
+      .frameworks {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background: white;
+        width: 100%;
+        padding: 0;
+        bottom: 0;
+        justify-content: center;
+
+        .frameworksTitle {
+          font-size: 0.6em;
+          color: black;
+          font-weight: bold;
+        }
+
+        h7 {
+          color: black;
+          font-size: 0.6em;
+          margin: 0 5px;
+        }
+      }
     }
 
     .pieceInfo {
-      white-space: nowrap;
       color: white;
       font-size: 20px;
       position: absolute;

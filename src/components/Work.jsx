@@ -48,7 +48,7 @@ function Work() {
     {
       name: "Conway's Game of Life",
       color: "#000000",
-      website: "PUT LINK HERE",
+      website: "https://zen-austin-ce6ed3.netlify.app/",
       github:
         "https://github.com/anthonyvigz/GameOfLife/tree/master/gameoflife",
       frameworks: ["React", "Python"],
