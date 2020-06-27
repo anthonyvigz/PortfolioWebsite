@@ -89,7 +89,7 @@ function Work() {
     {
       name: "Blue Sky Lab",
       color: "#0082d2",
-      website: "INSERT LINK HERE",
+      website: "https://festive-rosalind-c155c2.netlify.app/",
       github: "https://github.com/anthonyvigz/BlueSky",
       frameworks: ["React", "AWS", "SASS"],
       imagelink: "https://i.imgur.com/ZA2u5Yc.png",
