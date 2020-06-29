@@ -24,7 +24,7 @@ export default function WorkPiece(props) {
             href={props.piece.website}
             className="website"
           >
-            <i class="far fa-browser"></i>
+            <i className="far fa-browser"></i>
           </a>
         ) : null}
         {props.piece.github ? (
@@ -34,7 +34,7 @@ export default function WorkPiece(props) {
             href={props.piece.github}
             className="github"
           >
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
         ) : null}
         <div className="pieceInfo">
@@ -43,8 +43,8 @@ export default function WorkPiece(props) {
         </div>
         <div className="frameworks">
           <h6 className="frameworksTitle">Frameworks:</h6>
-          {props.piece.frameworks.map((fw) => {
-            return <h7>{fw}</h7>;
+          {props.piece.frameworks.map((fw, index) => {
+            return <h6 key={index}>{fw}</h6>;
           })}
         </div>
       </div>
