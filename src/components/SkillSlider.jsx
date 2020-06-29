@@ -9,14 +9,14 @@ export default function SkillSlider(props) {
       text:
         "With a strong history in graphic design, I have a knack for producing eye-popping and user friendly interfaces.",
       icon: "far fa-object-group",
-      opacity: 1,
+      opacity: 0.8,
     },
     {
       name: "Web Applications",
       text:
         "I can create and modify web content from the ground up using various front-end frameworks and database interfaces.",
       icon: "fa fa-laptop",
-      opacity: 1,
+      opacity: 0.9,
     },
     {
       name: "Mobile Responsiveness",
@@ -30,21 +30,21 @@ export default function SkillSlider(props) {
       text:
         "I can take your business to the next level whether it's for eCommerce or for internal functions.",
       icon: "fas fa-cash-register",
-      opacity: 1,
+      opacity: 0.9,
     },
     {
       name: "System Design Integration",
       text:
         "I take pride in my ability to lead or work with any team in designing products from prototype to user.",
       icon: "fas fa-crop-alt",
-      opacity: 1,
+      opacity: 0.8,
     },
     {
       name: "Database Management",
       text:
         "Using the most modern migration systems, I can architect highly efficient and secure databases.",
       icon: "fas fa-layer-group",
-      opacity: 1,
+      opacity: 0.9,
     },
     {
       name: "User Authentication",
@@ -58,7 +58,7 @@ export default function SkillSlider(props) {
       text:
         "Having mastered the Adobe Creative Suite, I am a unique candidate with a history in photo and video production.",
       icon: "fas fas fa-video",
-      opacity: 1,
+      opacity: 0.9,
     },
   ];
 

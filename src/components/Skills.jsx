@@ -284,47 +284,78 @@ function Skills() {
             animate="visible"
             exit="hidden"
             className="managerialBlocks"
+            onMouseEnter={() => setSkill("  ")}
           >
             <SkillSlider x={x} />
             <div className="whatWeDo">
               <div className="solutionsBlock">
                 <div className="listedSolutions">
-                  <button onClick={() => setX(0)} className="solution">
+                  <button
+                    onClick={() => setX(0)}
+                    className={x === 0 ? "solution solutionActive" : "solution"}
+                  >
                     <i className="fa fa-angle-double-left"></i>
                     <p>UI / UX Design</p>
                   </button>
-                  <button onClick={() => setX(-100)} className="solution">
+                  <button
+                    onClick={() => setX(-100)}
+                    className={
+                      x === -100 ? "solution solutionActive" : "solution"
+                    }
+                  >
                     <i className="fa fa-angle-double-left"></i>
                     <p>Web Applications</p>
                   </button>
-                  <button onClick={() => setX(-200)} className="solution">
+                  <button
+                    onClick={() => setX(-200)}
+                    className={
+                      x === -200 ? "solution solutionActive" : "solution"
+                    }
+                  >
                     <i className="fa fa-angle-double-left"></i>
                     <p>Mobile Responsiveness</p>
                   </button>
-                  <button onClick={() => setX(-300)} className="solution">
+                  <button
+                    onClick={() => setX(-300)}
+                    className={
+                      x === -300 ? "solution solutionActive" : "solution"
+                    }
+                  >
                     <i className="fa fa-angle-double-left"></i>
                     <p>Custom Business Software</p>
                   </button>
-                  <button onClick={() => setX(-400)} className="solution">
+                  <button
+                    onClick={() => setX(-400)}
+                    className={
+                      x === -400 ? "solution solutionActive" : "solution"
+                    }
+                  >
                     <i className="fa fa-angle-double-left"></i>
                     <p>System Design Integration</p>
                   </button>
-                  <button onClick={() => setX(-500)} className="solution">
+                  <button
+                    onClick={() => setX(-500)}
+                    className={
+                      x === -500 ? "solution solutionActive" : "solution"
+                    }
+                  >
                     <i className="fa fa-angle-double-left"></i>
                     <p>Database Management</p>
                   </button>
                   <button
                     onClick={() => setX(-600)}
-                    className="solution"
-                    value="No"
+                    className={
+                      x === -600 ? "solution solutionActive" : "solution"
+                    }
                   >
                     <i className="fa fa-angle-double-left"></i>
                     <p>User Authentication</p>
                   </button>
                   <button
                     onClick={() => setX(-700)}
-                    value="video"
-                    className="solution"
+                    className={
+                      x === -700 ? "solution solutionActive" : "solution"
+                    }
                     id="lastSolution"
                   >
                     <i className="fa fa-angle-double-left"></i>
@@ -351,78 +382,6 @@ function Skills() {
                 </div>
               </div>
             </div>
-            {/* <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1300">
-            {(props) => (
-              <div style={props}>
-                <div className="mBlock">
-                  <i className="fa fa-laptop"></i>
-                  <h3>Web Development</h3>
-                  <p>
-                    I can create and modify web content from the ground up using
-                    various front-end frameworks and database interfaces.
-                  </p>
-                </div>
-              </div>
-            )}
-          </Spring>
-          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1400">
-            {(props) => (
-              <div style={props}>
-                <div className="mBlock">
-                  <i className="fas fa-cog"></i>
-                  <h3>UI/UX Enhancement</h3>
-                  <p>
-                    With a strong history in graphic design, I have a knack for
-                    producing eye-popping and user friendly interfaces.
-                  </p>
-                </div>
-              </div>
-            )}
-          </Spring>
-          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1500">
-            {(props) => (
-              <div name="resp" style={props}>
-                <div className="mBlock">
-                  <i className="far fa-window-restore"></i>
-                  <h3>Responsive Design</h3>
-                  <p>
-                    Proficiency in transforming new or existing pages to become
-                    fully responsive and adaptive across all media platforms.
-                  </p>
-                </div>
-              </div>
-            )}
-          </Spring>
-          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1600">
-            {(props) => (
-              <div name="leader" style={props}>
-                <div className="mBlock">
-                  <i className="fas fa-chalkboard-teacher"></i>
-                  <h3>Team Leadership</h3>
-                  <p>
-                    I take pride in my ability to lead a team to success by
-                    being attentive to colleagues and resourceful in finding
-                    solutions.
-                  </p>
-                </div>
-              </div>
-            )}
-          </Spring>
-          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1700">
-            {(props) => (
-              <div name="vid" style={props}>
-                <div className="mBlock">
-                  <i className="fas fa-video"></i>
-                  <h3>Graphic and Video Production</h3>
-                  <p>
-                    Having mastered the Adobe Creative Suite, I am an
-                    outstanding candidate with a unique skillset in photo and
-                    video production.
-                  </p>
-                </div>
-              </div>
-            )}
-          </Spring> */}
           </motion.div>
         </AnimatePresence>
       </div>

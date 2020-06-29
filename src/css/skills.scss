@@ -18,6 +18,7 @@
 .skillsBlock button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .skillsBlock button:focus {
@@ -32,14 +33,6 @@
 .skillsBlock img {
   width: 40px;
   transition: 0.5s;
-}
-
-.skillsBlock svg:hover {
-  width: 60px;
-}
-
-.skillsBlock img:hover {
-  width: 60px;
 }
 
 .skill {
@@ -194,6 +187,7 @@
       display: flex;
       flex-direction: column;
       margin-top: 20px;
+      width: 300px;
 
       .solution {
         display: flex;
@@ -211,6 +205,7 @@
         i {
           color: rgba(0, 140, 255, 0.966);
           font-size: 1em;
+          transition: 0.5s;
         }
 
         p {
@@ -220,6 +215,28 @@
           font-family: "Poppins", sans-serif;
           color: #292929;
           font-weight: 300;
+          transition: 0.5s;
+        }
+      }
+
+      .solution:hover {
+        p {
+          margin-left: 18px;
+        }
+        i {
+          margin-left: -10px;
+          transition: 0.5s;
+        }
+      }
+
+      .solutionActive {
+        p {
+          margin-left: 18px;
+          color: rgba(0, 140, 255, 0.966);
+        }
+        i {
+          margin-left: -10px;
+          transition: 0.5s;
         }
       }
 
@@ -235,7 +252,7 @@
       align-items: center;
       justify-content: center;
       margin-left: 55px;
-      width: 40%;
+      width: 50%;
 
       h4 {
         margin: 0;
