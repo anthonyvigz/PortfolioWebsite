@@ -1,6 +1,6 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   let location = useLocation();
@@ -8,26 +8,35 @@ function NavBar() {
   let navbar = "navbar";
   let asp = "as";
 
-
-  if(location.pathname === "/") {
-    navbar = "navbar"
+  if (location.pathname === "/") {
+    navbar = "navbar";
   } else {
-    navbar = "navbar navbarAlt"
-    asp = "linksAlt"
-  };
+    navbar = "navbar navbarAlt";
+    asp = "linksAlt";
+  }
 
-    return (
-            <nav className={navbar}>
-            <h1>ANTHONY VIGLIOTTA</h1>
-            <div className="links">
-                <NavLink className={asp} activeClassName="selected" exact to="/">Home</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/about">About</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/skills">Skills</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/work">Work</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/contact">Contact</NavLink>
-            </div>
-            </nav>
-    )
+  return (
+    <nav className={navbar}>
+      <h1>ANTHONY VIGLIOTTA</h1>
+      <div className="links">
+        <NavLink className={asp} activeClassName="selected" exact to="/">
+          Home
+        </NavLink>
+        <NavLink className={asp} activeClassName="selected" to="/about">
+          About
+        </NavLink>
+        <NavLink className={asp} activeClassName="selected" to="/skills">
+          Skills
+        </NavLink>
+        <NavLink className={asp} activeClassName="selected" to="/work">
+          Work
+        </NavLink>
+        <NavLink className={asp} activeClassName="selected" to="/contact">
+          Contact
+        </NavLink>
+      </div>
+    </nav>
+  );
 }
 
 export default NavBar;
