@@ -17,7 +17,15 @@ function NavBar() {
 
   return (
     <nav className={navbar}>
-      <h1>ANTHONY VIGLIOTTA</h1>
+      <h1
+        style={
+          location.pathname === "/"
+            ? { color: "white" }
+            : { color: "rgba(0, 140, 255, 0.76)" }
+        }
+      >
+        ANTHONY VIGLIOTTA
+      </h1>
       <div className="links">
         <NavLink className={asp} activeClassName="selected" exact to="/">
           Home

@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import reactLogo from "../img/React.js_logo-512.png";
 import adobeLogo from "../img/136-adobe-512.png";
-import "../css/skills.css";
+import "../css/skills.scss";
 import { Spring } from "react-spring/renderprops";
+import SkillBlock from "./SkillBlock";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Skills() {
   const [skill, setSkill] = useState("  ");
+
+  const [currentBlock, setBlock] = useState("Web");
 
   const changeSkill = (event) => {
     event.preventDefault();
@@ -15,6 +19,36 @@ function Skills() {
 
     setSkill(newSkill);
   };
+
+  const blocks = [
+    {
+      name: "Web",
+      text: "hey",
+    },
+    { name: "No", text: "hey" },
+    { name: "video", text: "wow", color: "red" },
+  ];
+
+  // variants for animation
+  const parentList = {
+    visible: {
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+  };
+
+  const shownBlocks = blocks.filter((block) => {
+    return block.name === currentBlock;
+  });
 
   return (
     <AbsoluteWrapper>
@@ -247,8 +281,78 @@ function Skills() {
         </div>
         <div className="emptyBorderSkills"></div>
         <h3 className="skill">{skill}</h3>
-        <div className="managerialBlocks">
-          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1300">
+        <AnimatePresence exitBeforeEnter>
+          <motion.div
+            variants={parentList}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className="managerialBlocks"
+          >
+            {shownBlocks.map((block) => {
+              return <SkillBlock block={block} />;
+            })}
+            <div className="whatWeDo">
+              <div className="solutionsBlock">
+                <div className="listedSolutions">
+                  <li className="solution">
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>Website Design</p>
+                  </li>
+                  <li className="solution">
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>Web Applications</p>
+                  </li>
+                  <li className="solution">
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>Mobile Responsiveness</p>
+                  </li>
+                  <li className="solution">
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>Custom Business Software</p>
+                  </li>
+                  <li className="solution">
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>System Design Integration</p>
+                  </li>
+                  <li className="solution">
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>Database Management</p>
+                  </li>
+                  <li className="solution">
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>User Authentication</p>
+                  </li>
+                  <li
+                    onMouseOver={() => setBlock("video")}
+                    Name="solution"
+                    id="lastSolution"
+                  >
+                    <i className="fa fa-angle-double-left"></i>
+                    <p>Video Editing</p>
+                  </li>
+                </div>
+                <div className="additionalSolutions">
+                  <h4>Additional Skills:</h4>
+                  <div className="addSolution">
+                    <img
+                      src="https://i.imgur.com/H4dvwyw.png"
+                      alt="Custom Reports"
+                    />
+                    <p>Copywriting/ Scriptwriting</p>
+                  </div>
+                  <div className="addSolution">
+                    <img src="https://i.imgur.com/TcNPuot.png" alt="code" />
+                    <p>Framework Tutorials</p>
+                  </div>
+                  <div className="addSolution">
+                    <img src="https://i.imgur.com/zHR1vXR.png" alt="block" />
+                    <p>Algorithmic Services</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="1300">
             {(props) => (
               <div style={props}>
                 <div className="mBlock">
@@ -319,8 +423,9 @@ function Skills() {
                 </div>
               </div>
             )}
-          </Spring>
-        </div>
+          </Spring> */}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </AbsoluteWrapper>
   );
