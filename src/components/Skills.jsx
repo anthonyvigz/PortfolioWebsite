@@ -6,11 +6,15 @@ import "../css/skills.scss";
 import { Spring } from "react-spring/renderprops";
 import { motion, AnimatePresence } from "framer-motion";
 import SkillSlider from "./SkillSlider";
+import useWindowDimensions from "./WindowSize";
 
 function Skills() {
   const [skill, setSkill] = useState("  ");
 
   const [x, setX] = useState(-100);
+
+  // width of window from window component
+  const { width } = useWindowDimensions();
 
   const changeSkill = (event) => {
     event.preventDefault();
@@ -19,15 +23,6 @@ function Skills() {
 
     setSkill(newSkill);
   };
-
-  const blocks = [
-    {
-      name: "Web",
-      text: "hey",
-    },
-    { name: "No", text: "hey" },
-    { name: "video", text: "wow", color: "red" },
-  ];
 
   // variants for animation
   const parentList = {
@@ -44,6 +39,15 @@ function Skills() {
         when: "afterChildren",
       },
     },
+  };
+
+  const goLeft = () => {
+    setX(x + 100);
+    x === 0 ? setX(-100 * 7) : setX(x + 100);
+  };
+
+  const goRight = () => {
+    x === -100 * 7 ? setX(0) : setX(x - 100);
   };
 
   return (
@@ -287,6 +291,16 @@ function Skills() {
             onMouseEnter={() => setSkill("  ")}
           >
             <SkillSlider x={x} />
+            {width < 955 ? (
+              <>
+                <button className="goLeft" onClick={goLeft}>
+                  <i className="fas fa-chevron-left"></i>
+                </button>
+                <button className="goRight" onClick={goRight}>
+                  <i className="fas fa-chevron-right"></i>
+                </button>
+              </>
+            ) : null}
             <div className="whatWeDo">
               <div className="solutionsBlock">
                 <div className="listedSolutions">

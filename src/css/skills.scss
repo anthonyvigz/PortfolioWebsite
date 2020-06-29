@@ -61,6 +61,7 @@
   font-family: "Raleway", sans-serif;
   padding: 15px;
   margin-top: 5pxx;
+  position: relative;
 
   .currentBlock {
     color: rgba(0, 140, 255, 0.95);
@@ -75,6 +76,44 @@
 
     h1 {
       transition: 1s;
+    }
+  }
+
+  .goLeft {
+    position: absolute;
+    background: rgba(3, 59, 105, 0.644);
+    left: 0;
+    width: 50px;
+    display: flex;
+    height: 300px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    i {
+      color: white;
+      font-size: 3em;
+    }
+  }
+
+  .goRight {
+    position: absolute;
+    background: rgba(3, 59, 105, 0.644);
+    right: 0;
+    width: 50px;
+    display: flex;
+    height: 300px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    i {
+      color: white;
+      font-size: 3em;
     }
   }
 }
@@ -129,20 +168,6 @@
   border-top: rgba(0, 140, 255, 0.966) solid 4px;
 }
 
-/* MOBILE */
-@media (max-width: 575px) {
-  .skillsBlock {
-    margin-top: 10px;
-  }
-
-  .skill {
-    margin-top: 50px;
-  }
-
-  .emptyBorderSkills {
-    display: none;
-  }
-}
 .currentBlock {
   width: 200px;
   border: solid red 3px;
@@ -285,5 +310,50 @@
         }
       }
     }
+  }
+}
+
+/* MOBILE */
+@media (max-width: 955px) {
+  .whatWeDo {
+    display: none;
+  }
+  .skillsBlock {
+    margin-top: 10px;
+  }
+
+  .skill {
+    margin-top: 50px;
+  }
+
+  .emptyBorderSkills {
+    display: none;
+  }
+
+  div.managerialBlocks {
+    margin-top: -45px;
+    margin-bottom: 25px;
+
+    .sliderBg {
+      border-radius: 0;
+
+      .slider {
+        border-radius: 0;
+
+        .slide {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  .skill {
+    margin-top: 105px;
+  }
+}
+
+@media (max-width: 655px) {
+  div.managerialBlocks {
+    margin-top: 25px;
   }
 }
