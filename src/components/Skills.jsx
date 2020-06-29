@@ -4,13 +4,13 @@ import reactLogo from "../img/React.js_logo-512.png";
 import adobeLogo from "../img/136-adobe-512.png";
 import "../css/skills.scss";
 import { Spring } from "react-spring/renderprops";
-import SkillBlock from "./SkillBlock";
 import { motion, AnimatePresence } from "framer-motion";
+import SkillSlider from "./SkillSlider";
 
 function Skills() {
   const [skill, setSkill] = useState("  ");
 
-  const [currentBlock, setBlock] = useState("Web");
+  const [x, setX] = useState(-100);
 
   const changeSkill = (event) => {
     event.preventDefault();
@@ -45,10 +45,6 @@ function Skills() {
       },
     },
   };
-
-  const shownBlocks = blocks.filter((block) => {
-    return block.name === currentBlock;
-  });
 
   return (
     <AbsoluteWrapper>
@@ -289,48 +285,51 @@ function Skills() {
             exit="hidden"
             className="managerialBlocks"
           >
-            {shownBlocks.map((block) => {
-              return <SkillBlock block={block} />;
-            })}
+            <SkillSlider x={x} />
             <div className="whatWeDo">
               <div className="solutionsBlock">
                 <div className="listedSolutions">
-                  <li className="solution">
+                  <button onClick={() => setX(0)} className="solution">
                     <i className="fa fa-angle-double-left"></i>
-                    <p>Website Design</p>
-                  </li>
-                  <li className="solution">
+                    <p>UI / UX Design</p>
+                  </button>
+                  <button onClick={() => setX(-100)} className="solution">
                     <i className="fa fa-angle-double-left"></i>
                     <p>Web Applications</p>
-                  </li>
-                  <li className="solution">
+                  </button>
+                  <button onClick={() => setX(-200)} className="solution">
                     <i className="fa fa-angle-double-left"></i>
                     <p>Mobile Responsiveness</p>
-                  </li>
-                  <li className="solution">
+                  </button>
+                  <button onClick={() => setX(-300)} className="solution">
                     <i className="fa fa-angle-double-left"></i>
                     <p>Custom Business Software</p>
-                  </li>
-                  <li className="solution">
+                  </button>
+                  <button onClick={() => setX(-400)} className="solution">
                     <i className="fa fa-angle-double-left"></i>
                     <p>System Design Integration</p>
-                  </li>
-                  <li className="solution">
+                  </button>
+                  <button onClick={() => setX(-500)} className="solution">
                     <i className="fa fa-angle-double-left"></i>
                     <p>Database Management</p>
-                  </li>
-                  <li className="solution">
+                  </button>
+                  <button
+                    onClick={() => setX(-600)}
+                    className="solution"
+                    value="No"
+                  >
                     <i className="fa fa-angle-double-left"></i>
                     <p>User Authentication</p>
-                  </li>
-                  <li
-                    onMouseOver={() => setBlock("video")}
-                    Name="solution"
+                  </button>
+                  <button
+                    onClick={() => setX(-700)}
+                    value="video"
+                    className="solution"
                     id="lastSolution"
                   >
                     <i className="fa fa-angle-double-left"></i>
-                    <p>Video Editing</p>
-                  </li>
+                    <p>Graphic / Video Production</p>
+                  </button>
                 </div>
                 <div className="additionalSolutions">
                   <h4>Additional Skills:</h4>

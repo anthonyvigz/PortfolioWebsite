@@ -62,7 +62,8 @@
 .managerialBlocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   color: rgba(0, 140, 255, 0.966);
   font-family: "Raleway", sans-serif;
   padding: 15px;
@@ -162,6 +163,7 @@
   padding: 0 45px;
   right: 100px;
   top: 0px;
+  margin: 0;
   // box-shadow: -12px -11px 5px -11px rgba(0, 0, 0, 0.75);
   border: solid rgba(0, 140, 255, 0.212) 5px;
 
@@ -196,10 +198,15 @@
       .solution {
         display: flex;
         list-style: none;
+        border: none;
         border-bottom: solid rgba(128, 128, 128, 0.26) 2px;
         align-items: center;
         padding-bottom: 14px;
         margin-top: 14px;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 0.9em;
 
         i {
           color: rgba(0, 140, 255, 0.966);
