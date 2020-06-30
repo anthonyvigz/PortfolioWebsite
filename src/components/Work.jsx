@@ -38,7 +38,7 @@ function Work() {
     {
       name: "McGarvin Engineering Website",
       color: "#603b27",
-      website: "https://mcgarvin.com",
+      website: "https://thirsty-cray-709738.netlify.app/",
       github: null,
       frameworks: ["React", "AWS", "SASS"],
       imagelink: "https://i.imgur.com/ydYqINx.png",
